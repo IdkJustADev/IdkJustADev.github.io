@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual Studio Code-like Editor</title>
+    <title>VS Code-like Web Editor</title>
+    <link rel="shortcut icon" type="image/x-icon" href="ImgSource/favicon.ico">
     <style>
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
         }
         #header {
             background-color: #2d2d2d;
@@ -17,10 +19,14 @@
             padding: 10px;
             font-size: 20px;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
         }
         #container {
             display: flex;
-            height: calc(100% - 40px);
+            height: calc(100% - 30px);
+            overflow: hidden;
         }
         #sidebar {
             background-color: #333;
@@ -31,13 +37,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow-y: auto;
         }
         #editor {
             flex: 1;
             background-color: #1e1e1e;
             color: white;
             padding: 10px;
-            overflow-y: scroll;
+            overflow-y: auto;
         }
         .sidebar-item {
             padding: 10px;
@@ -55,10 +62,9 @@
     </style>
 </head>
 <body>
-    <div id="header">VS Code-like Editor</div>
+    <div id="header">VS Code-like Web Editor</div>
     <div id="container">
         <div id="sidebar">
-            <div class="sidebar-item" onclick="executeCode()"><i class="fas fa-play"></i>Execute</div>
             <div class="sidebar-item"><i class="fas fa-folder-open"></i>Explorer</div>
             <div class="sidebar-item"><i class="fas fa-file"></i>File</div>
             <div class="sidebar-item"><i class="fas fa-edit"></i>Edit</div>
@@ -74,13 +80,5 @@
     </div>
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script>
-        function executeCode() {
-            var code = document.getElementById("editor").innerText;
-            console.log("Executing code:");
-            console.log(code);
-            // Add your code execution logic here
-        }
-    </script>
 </body>
 </html>
