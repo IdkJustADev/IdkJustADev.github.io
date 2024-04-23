@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Code Editor</title>
+  <style>
+    /* Add your CSS styles for the editor here */
+  </style>
+</head>
+<body>
+  <div class="editor">
+    <textarea id="codeEditor" placeholder="Write your code here..."></textarea>
+    <button id="runButton">Run</button>
+  </div>
+  <div class="console">
+    <h3>Console</h3>
+    <div id="output"></div>
+  </div>
+
+  <script>
+    const codeEditor = document.getElementById("codeEditor");
+    const runButton = document.getElementById("runButton");
+    const output = document.getElementById("output");
+
+    runButton.addEventListener("click", function() {
+      const code = codeEditor.value;
+
+      try {
+        // Execute code
+        const result = eval(code);
+        output.textContent = result;
+      } catch (error) {
+        output.textContent = "Error: " + error.message;
+      }
+    });
+  </script>
+</body>
+</html>
