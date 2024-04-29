@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Code Editor</title>
-  <!-- Include CodeMirror CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/codemirror.min.css">
-  <!-- Include appropriate CodeMirror mode (e.g., JavaScript) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/mode/javascript/javascript.min.js"></script>
-  <!-- Include CodeMirror keymap (optional) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/keymap/sublime.min.js"></script>
-  <!-- Include CodeMirror theme (e.g., default) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.1/theme/material-darker.min.css">
-  <style>
-    /* Style for the editor container */
-    #editor {
-      width: 100%;
-      height: 100vh; /* Full viewport height */
-      font-family: 'Fira Code', monospace; /* Use a monospaced font like Fira Code */
-      font-size: 16px; /* Adjust font size */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Streaming Service</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- HTML element to contain the editor -->
-  <textarea id="editor">// Write your code here...</textarea>
+    <header>
+        <h1>My Music Streaming Service</h1>
+        <!-- Navigation links can go here -->
+    </header>
 
-  <!-- Script to initialize CodeMirror -->
-  <script>
-    // Initialize CodeMirror
-    var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
-      lineNumbers: true, // Show line numbers
-      mode: "javascript", // Set the language mode (e.g., JavaScript)
-      theme: "material-darker", // Set the theme (e.g., material-darker)
-      keyMap: "sublime" // Set the keymap (optional)
-    });
-  </script>
+    <main>
+        <section class="featured">
+            <h2>Featured Tracks</h2>
+            <!-- Featured track listings -->
+        </section>
+
+        <section class="genres">
+            <h2>Genres</h2>
+            <!-- Genre categories -->
+        </section>
+
+        <section class="new-releases">
+            <h2>New Releases</h2>
+            <!-- New release listings -->
+        </section>
+
+        <section class="playlists">
+            <h2>Playlists</h2>
+            <!-- Playlist listings -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Music Streaming Service</p>
+    </footer>
 </body>
 </html>
