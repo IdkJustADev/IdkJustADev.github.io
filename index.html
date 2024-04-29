@@ -3,57 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Trainer</title>
+    <title>Visual Studio-like UI</title>
     <style>
-        /* CSS will be added later */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .editor {
+            flex: 1;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Code Trainer</h1>
-        <nav>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Sidebar content here -->
+            <h2>Explorer</h2>
             <ul>
-                <li><a href="#basic">Basic</a></li>
-                <li><a href="#variables">Variables</a></li>
-                <li><a href="#functions">Functions</a></li>
-                <li><a href="#control-flow">Control Flow</a></li>
-                <li><a href="#arrays">Arrays</a></li>
-                <li><a href="#about">About</a></li>
+                <li>File 1</li>
+                <li>File 2</li>
+                <li>File 3</li>
+                <!-- Add more files as needed -->
             </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="basic" class="content">
-            <h2>Basic</h2>
-            <p>Introduction to C++ programming language.</p>
-            <p>In this lesson, you'll learn:</p>
-            <ul>
-                <li>What is C++?</li>
-                <li>How to write your first C++ program</li>
-            </ul>
-            <p>C++ is a powerful programming language widely used for system/application software, game development, drivers, client-server applications, and embedded firmware.</p>
-            <p>Here's a simple "Hello, World!" program in C++:</p>
-            <div class="code-container">
-                <pre class="code-editor"> #include &lt;iostream&gt;
+        </div>
+        <div class="editor">
+            <!-- Editor content here -->
+            <h1>Welcome to your Code Editor</h1>
+            <textarea id="code"></textarea>
+            <button onclick="runCode()">Run</button>
+            <div id="output"></div>
+        </div>
+    </div>
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
-} </pre>
-            </div>
-        </section>
-
-        <!-- Other sections for variables, functions, control flow, arrays -->
-
-        <section id="about" class="content">
-            <h2>About</h2>
-            <p>This Code Trainer is a simple tool to help you learn C++ programming language.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Code Trainer</p>
-    </footer>
+    <script>
+        function runCode() {
+            var code = document.getElementById("code").value;
+            try {
+                eval(code);
+            } catch (error) {
+                document.getElementById("output").innerText = "Error: " + error.message;
+            }
+        }
+    </script>
 </body>
 </html>
