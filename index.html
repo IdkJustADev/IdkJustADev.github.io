@@ -3,79 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLion-like UI with HTML/CSS</title>
+    <title>Code Trainer</title>
     <style>
-        /* Resetting default margin and padding */
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
-        /* Styling header */
         header {
-            background-color: #2b2b2b;
-            color: #ffffff;
+            background-color: #333;
+            color: #fff;
             padding: 10px 20px;
-            font-size: 20px;
-            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        /* Styling navigation */
         nav ul {
             list-style-type: none;
-            background-color: #3a3a3a;
-            padding: 5px 0;
-            text-align: center;
+            padding: 0;
+            margin: 0;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 10px;
+            margin-right: 10px;
         }
 
         nav ul li a {
+            color: #fff;
             text-decoration: none;
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: bold;
         }
 
-        /* Styling sections */
-        section {
+        main {
             padding: 20px;
         }
 
-        /* Styling footer */
         footer {
-            background-color: #2b2b2b;
-            color: #ffffff;
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 10px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
+
+        .content {
+            margin-bottom: 20px;
+        }
+
+        .code-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .code-editor {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #ccc;
+            resize: none;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: monospace;
+        }
+
+        .output {
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
     </style>
 </head>
 <body>
     <header>
-        Welcome to My Website
+        <h1>Code Trainer</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#help">Help</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida nibh eget justo rhoncus ullamcorper.</p>
-    </section>
+    
+    <main>
+        <section id="courses" class="content">
+            <h2>Courses</h2>
+            <!-- Your courses content goes here -->
+        </section>
+
+        <section id="help" class="content">
+            <h2>Help</h2>
+            <!-- Your help content goes here -->
+        </section>
+
+        <section id="about" class="content">
+            <h2>About</h2>
+            <!-- Your about content goes here -->
+        </section>
+    </main>
+
     <footer>
-        &copy; 2024 My Website. All rights reserved.
+        <p>&copy; 2024 Code Trainer</p>
     </footer>
 </body>
 </html>
