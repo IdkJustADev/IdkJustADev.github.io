@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Trainer</title>
     <style>
-        /* Your CSS styles here */
-        /* Navigation button hover effect */
-        nav ul li a:hover {
-            color: purple;
-        }
+        /* CSS will be added later */
     </style>
 </head>
 <body>
@@ -17,52 +13,47 @@
         <h1>Code Trainer</h1>
         <nav>
             <ul>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#help">Help</a></li>
+                <li><a href="#basic">Basic</a></li>
+                <li><a href="#variables">Variables</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#control-flow">Control Flow</a></li>
+                <li><a href="#arrays">Arrays</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section id="courses" class="content">
-            <h2>C++ Course</h2>
-            <p>Welcome to the C++ course! Here's a simple example:</p>
+        <section id="basic" class="content">
+            <h2>Basic</h2>
+            <p>Introduction to C++ programming language.</p>
+            <p>In this lesson, you'll learn:</p>
+            <ul>
+                <li>What is C++?</li>
+                <li>How to write your first C++ program</li>
+            </ul>
+            <p>C++ is a powerful programming language widely used for system/application software, game development, drivers, client-server applications, and embedded firmware.</p>
+            <p>Here's a simple "Hello, World!" program in C++:</p>
             <div class="code-container">
-                <textarea class="code-editor" placeholder="Enter your C++ code here"></textarea>
-                <button onclick="runCppCode()">Run Code</button>
-            </div>
-            <div class="output">
-                <h3>Output:</h3>
-                <pre id="cpp-output"></pre>
+                <pre class="code-editor"> #include &lt;iostream&gt;
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+} </pre>
             </div>
         </section>
 
-        <section id="help" class="content">
-            <h2>Help</h2>
-            <p>Need assistance? Here are some resources:</p>
-            <ul>
-                <li><a href="https://www.cplusplus.com/doc/tutorial/">C++ Tutorial</a></li>
-                <li><a href="https://www.lua.org/docs.html">Lua Documentation</a></li>
-            </ul>
-        </section>
+        <!-- Other sections for variables, functions, control flow, arrays -->
 
         <section id="about" class="content">
             <h2>About</h2>
-            <p>This Code Trainer is a simple tool to help you learn C++ and Lua programming languages.</p>
+            <p>This Code Trainer is a simple tool to help you learn C++ programming language.</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Code Trainer</p>
     </footer>
-
-    <script>
-        function runCppCode() {
-            // This is just a placeholder function for running C++ code
-            const code = document.querySelector('.code-editor').value;
-            document.getElementById('cpp-output').innerText = "Hello, World!"; // Placeholder output
-        }
-    </script>
 </body>
 </html>
