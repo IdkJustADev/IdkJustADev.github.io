@@ -5,76 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Trainer</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .content {
-            margin-bottom: 20px;
-        }
-
-        .code-container {
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-
-        .code-editor {
-            width: 100%;
-            height: 200px;
-            border: 1px solid #ccc;
-            resize: none;
-            padding: 10px;
-            box-sizing: border-box;
-            font-family: monospace;
-        }
-
-        .output {
-            border: 1px solid #ccc;
-            padding: 10px;
-            box-sizing: border-box;
-            background-color: #f9f9f9;
+        /* Your CSS styles here */
+        /* Navigation button hover effect */
+        nav ul li a:hover {
+            color: purple;
         }
     </style>
 </head>
@@ -92,23 +26,43 @@
     
     <main>
         <section id="courses" class="content">
-            <h2>Courses</h2>
-            <!-- Your courses content goes here -->
+            <h2>C++ Course</h2>
+            <p>Welcome to the C++ course! Here's a simple example:</p>
+            <div class="code-container">
+                <textarea class="code-editor" placeholder="Enter your C++ code here"></textarea>
+                <button onclick="runCppCode()">Run Code</button>
+            </div>
+            <div class="output">
+                <h3>Output:</h3>
+                <pre id="cpp-output"></pre>
+            </div>
         </section>
 
         <section id="help" class="content">
             <h2>Help</h2>
-            <!-- Your help content goes here -->
+            <p>Need assistance? Here are some resources:</p>
+            <ul>
+                <li><a href="https://www.cplusplus.com/doc/tutorial/">C++ Tutorial</a></li>
+                <li><a href="https://www.lua.org/docs.html">Lua Documentation</a></li>
+            </ul>
         </section>
 
         <section id="about" class="content">
             <h2>About</h2>
-            <!-- Your about content goes here -->
+            <p>This Code Trainer is a simple tool to help you learn C++ and Lua programming languages.</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Code Trainer</p>
     </footer>
+
+    <script>
+        function runCppCode() {
+            // This is just a placeholder function for running C++ code
+            const code = document.querySelector('.code-editor').value;
+            document.getElementById('cpp-output').innerText = "Hello, World!"; // Placeholder output
+        }
+    </script>
 </body>
 </html>
