@@ -1,71 +1,505 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-cmp-zone="dcom" data-aem-archival="false">
 <head>
-    <meta charset="UTF-8">
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script type="text/javascript" async="" src="https://bat.bing.com/bat.js"></script>
+    <script src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js" type="text/javascript" async=""></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js" type="text/javascript" async=""></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/common.js" type="text/javascript" async=""></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script type="text/javascript" async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script src="https://cdn.cookielaw.org/consent/8d6de5a1-69f1-4c17-85b8-cd504b5d5c90/OtAutoBlock.js" type="text/javascript" async=""></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" async=""></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/irp-core.js" type="text/javascript" async=""></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/common.js" type="text/javascript" async=""></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js" type="text/javascript" async=""></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/common.js" type="text/javascript" async=""></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/irp-core.js" type="text/javascript" async=""></script>
+    <script src="https://cdn.cookielaw.org/consent/8d6de5a1-69f1-4c17-85b8-cd504b5d5c90/OtAutoBlock.js" type="text/javascript" async=""></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" async=""></script>
+    <script type="text/javascript" async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js" type="text/javascript" async=""></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script type="text/javascript" async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script src="https://cdn.cookielaw.org/consent/8d6de5a1-69f1-4c17-85b8-cd504b5d5c90/OtAutoBlock.js" type="text/javascript" async=""></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" async=""></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <meta charset="utf-8">
+    <meta name="msvalidate.01" content="C49A94B9F07CBFBA99D5002DD19CC2A9">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual Studio-like UI</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            display: flex;
-            height: 100vh;
-        }
-        .sidebar {
-            width: 200px;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        .editor {
-            flex: 1;
-            padding: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="sidebar">
-            <!-- Sidebar content here -->
-            <h2>Explorer</h2>
-            <ul>
-                <li>File 1</li>
-                <li>File 2</li>
-                <li>File 3</li>
-                <!-- Add more files as needed -->
-            </ul>
-        </div>
-        <div class="editor">
-            <!-- Editor content here -->
-            <h1>Welcome to your Code Editor</h1>
-            <textarea id="code"></textarea>
-            <button onclick="runCode()">Run</button>
-            <div id="output"></div>
-        </div>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>Download .NET 9.0 (Linux, macOS, and Windows)</title>
+    <meta name="title" content="Download .NET 9.0 (Linux, macOS, and Windows)">
+    <meta name="description" content="Get started with .NET 9.0. Download and install the .NET 9.0 SDK (Software Development Kit) to develop and run .NET applications.">
+    <meta property="og:locale" content="en-US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Download .NET 9.0 (Linux, macOS, and Windows)">
+    <meta property="og:description" content="Get started with .NET 9.0. Download and install the .NET 9.0 SDK (Software Development Kit) to develop and run .NET applications.">
+    <meta property="og:site_name" content=".NET">
+    <meta property="og:image" content="https://dotnet.microsoft.com/static/images/redesign/social/social-default-image.png">
+    <meta property="og:image:secure_url" content="https://dotnet.microsoft.com/static/images/redesign/social/social-default-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Download .NET 9.0 (Linux, macOS, and Windows)">
+    <meta name="twitter:description" content="Get started with .NET 9.0. Download and install the .NET 9.0 SDK (Software Development Kit) to develop and run .NET applications.">
+    <meta name="twitter:image" content="https://dotnet.microsoft.com/static/images/redesign/social/social-default-image.png">
+    <meta name="twitter:image:alt" content=".NET">
+    <meta name="twitter:site" content="@dotnet">
+    <meta name="twitter:creator" content="@dotnet">
+    <link rel="canonical" href="https://dotnet.microsoft.com/en-us/download/dotnet/9.0">
+    <meta name="robots" content="index, follow">
+    <meta name="page-type" content="download">
+    <meta name="site" content="dotnet">
+    <meta name="fragment" content="!">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script async="" src="https://cdn.cookielaw.org/consent/8d6de5a1-69f1-4c17-85b8-cd504b5d5c90/OtAutoBlock.js"></script>
+    <script async="" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script type="text/javascript" async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script src="https://az725175.vo.msecnd.net/scripts/jsll-4.js" type="text/javascript" async=""></script>
+    <script src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js" type="text/javascript" async=""></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js" type="text/javascript" async=""></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/common.js" type="text/javascript" async=""></script>
+    <script src="https://privacy.microsoft.com/Content/Cookies/irp-core.js" type="text/javascript" async=""></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script async="" src="https://cdn.cookielaw.org/consent/8d6de5a1-69f1-4c17-85b8-cd504b5d5c90/OtAutoBlock.js"></script>
+    <script async="" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script type="text/javascript" async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script type="text/javascript" async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <meta name="description" content="Get started with .NET 9.0. Download and install the .NET 9.0 SDK (Software Development Kit) to develop and run .NET applications.">
+    <meta name="title" content="Download .NET 9.0 (Linux, macOS, and Windows)">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://a2129670915.cdn.optimizely.com/client_storage/a2129670915.html"></script>
+    <script async="" src="https://cdn.cookielaw.org/consent/8d6de5a1-69f1-4c17-85b8-cd504b5d5c90/OtAutoBlock.js"></script>
+    <script async="" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script type="text/javascript" async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <meta name="title" content="Download .NET 9.0 (Linux, macOS, and Windows)">
+    <meta name="description" content="Get started with .NET 9.0. Download and install the .NET 9.0 SDK (Software Development Kit) to develop and run .NET applications.">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <meta name="description" content="Get started with .NET 9.0. Download and install the .NET 9.0 SDK (Software Development Kit) to develop and run .NET applications.">
+    <meta name="title" content="Download .NET 9.0 (Linux, macOS, and Windows)">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <script type="text/javascript" async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <script async="" src="https://az725175.vo.msecnd.net/scripts/jsll-4.js"></script>
+    <script async="" src="https://nexus.ensighten.com/microsoft/AzFMS/Bootstrap.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/common.js"></script>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://bat.bing.com/bat.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-core.js"></script>
+    <script async="" src="https://privacy.microsoft.com/Content/Cookies/irp-cookies.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W3C48P"></script>
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fonts.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/highlight-js-github.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/redesign.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/bootstrap.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/monokai-sublime.min.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/common.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/learn.css?v=13.0.22030101">
+    <link rel="stylesheet" href="https://dotnet.microsoft.com/static/css/fontawesome-all.min.css?v=13.0.22030101">
     </div>
 
-    <script>
-        function runCode() {
-            var code = document.getElementById("code").value;
-            try {
-                eval(code);
-            } catch (error) {
-                document.getElementById("output").innerText = "Error: " + error.message;
-            }
-        }
-    </script>
 </body>
 </html>
